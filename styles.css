@@ -1,0 +1,85 @@
+body {
+  background: url(./images/background-image.jpg) no-repeat;
+  background-size: cover;
+}
+
+#mainContainer {
+  background-color: rgb(98, 112, 133);
+
+  margin: 0 auto;
+  width: 500px;
+}
+h1 {
+  color: white;
+  font-style: italic;
+}
+.head {
+  text-align: center;
+}
+#secondDiv {
+  padding: 10px 20px;
+  display: flex;
+}
+.input {
+  flex: 1;
+}
+.addBtn {
+  background-color: rgb(182 130 159);
+  padding: 4px;
+  font-weight: bolder;
+  font-style: italic;
+  cursor: pointer;
+  color: white;
+}
+
+#unorderedListOfToDo {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  list-style-type: none;
+  padding: 10px 41px 10px 27px;
+
+  font-style: italic;
+  font-size: 27px;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(182 130 159);
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+li.selected {
+  text-decoration: line-through;
+}
+
+li:hover {
+  background-color: rgb(98 112 133) !important;
+}
+#unorderedListOfToDo > li:nth-child(odd) {
+  background-color: rgb(219 188 205);
+}
+li.selected::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 15px;
+  height: 20;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45 deg);
+  border-color: white;
+  left: 11px;
+  transform: rotate(45deg);
+}
+.removedBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-style: normal;
+  cursor: pointer;
+  background-color: rgb(128 140 158);
+  padding: 10px;
+}
